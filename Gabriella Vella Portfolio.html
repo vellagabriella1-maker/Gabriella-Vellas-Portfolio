@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap" rel="stylesheet">
+
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        scroll-behavior: smooth;
+    }
+
+    .section {
+        width: 100%;
+        min-height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    .one  { background-image: url('Background1.png'); }
+    .two  { background-image: url('Background2.png'); height: 101vh; }
+    .three { background-image: url('Background3.png'); height: 101vh; }
+
+   /* NAV RIGHT SIDE */
+    nav {
+        position: absolute;
+        top: 50px;
+        right: 300px;
+    }
+
+    nav a {
+        display: inline-block;
+        background-color: #353c4e;
+        color: #fffcf2;
+        padding: 12px 65px;
+        margin-left: 10px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-size: 25px;
+    }
+
+    nav a.unactive {
+        background-color: #353c4e;
+        color: #fffcf2;
+    }
+
+    /* LIGHT BLUE HOVER + ACTIVE */
+    nav a:hover {
+        background-color: #353c4e;
+        color: #565e71;
+    }
+
+    nav a.active {
+        background-color:  #353c4e;
+        color: #565e71;
+    }
+
+    nav:hover a.active {
+        background-color: #353c4e;
+        color: #fffcf2;
+    }
+
+    nav a.active:hover {
+        background-color: #353c4e;
+        color: #565e71;
+    }
+
+
+    /* SMALL TITLE LEFT */
+    .small-title {
+        position: absolute;
+        top: 0px;
+        left: 200px;
+        color: #fffcf2;
+        font-size: 40px;
+        font-family: 'Ms Madi', cursive;
+        letter-spacing: 2px;
+        font-weight: normal;
+    }
+
+    /* MAIN TITLE */
+    .page-Titletwo {
+        position: absolute;
+        top: -95px;
+        left: 140px;
+        color: #fffcf2;
+        font-size: 410px;
+        line-height: 1;
+        font-family: 'Ms Madi', cursive;
+        font-weight: normal;
+        white-space: nowrap;
+        z-index: 10;
+    }
+
+    .page-Titlethree {
+        position: absolute;
+        top: 180px;
+        left: 1000px;
+        color: #353c4e;
+        font-size: 50px;
+        line-height: 1;
+        font-weight: normal;
+        white-space: nowrap;
+        z-index: 10;
+    }
+
+    .page-Titlefour {
+        position: absolute;
+        top: 180px;
+        left: 1100px;
+        color: #353c4e;
+        font-size: 100px;
+        line-height: 1;
+        font-family: 'Ms Madi', cursive;
+        font-weight: normal;
+        white-space: nowrap;
+        z-index: 10;
+    }
+    /* CONTACT BUTTON UNDER TITLE */
+    .contact-button {
+        position: absolute;
+        top: 450px;
+        left: 250px;
+        padding: 12px 150px;
+        background-color: white;
+        color: #353c4e;
+        font-size: 22px;
+        border-radius: 8px;
+        text-decoration: none;
+    }
+
+    .contact-button:hover {
+        background-color: #353c4e;
+        color: white;
+    }
+
+    /* PARAGRAPH */
+    .page-text {
+        position: absolute;
+        top: 380px;
+        left: 1010px;
+        width: 460px;
+        color: #353c4e;
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    /* HERO IMAGE */
+    .hero-image {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 78vh;
+        z-index: 20;
+        pointer-events: none;
+        margin-bottom: 90px;
+    }
+.page2-button {
+    position: absolute;
+    top: 660px; /* sits under the paragraph */
+    left: 1010px; /* same left alignment as the paragraph */
+    padding: 12px 120px;
+    background-color: #353c4e;
+    color: #fffcf2;
+    font-size: 22px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.page2-button:hover {
+    background-color: #565e71;
+    color: white;
+}
+</style>
+</head>
+
+<body>
+
+<div class="section one">
+
+    <nav>
+        <a href="Gabriella Vella Portfolio.html" class="active">Home</a>
+        <a href="about.html" class="unactive">About</a>
+        <a href="projects.html" class="unactive">Projects</a>
+        <a href="contacts.html" class="unactive">Contact</a>
+    </nav>
+
+    <h4 class="small-title">Gabriella Vella Portfolio</h4>
+
+    <h3 class="page-Titletwo">Made by G.</h3>
+
+    <img src="Image one.png" class="hero-image">
+
+</div>
+
+<div class="section two">
+<h3 class="page-Titlethree">HELLO, I'M</h3>
+<h3 class="page-Titlefour">Gabriella!</h3>
+<p class="page-text">I’m currently a first-year Bachelor of Communication and Media student, majoring in Visual Communications. This website showcases a range of projects I’ve created, where I’ve been responsible for both the design and coding aspects. As you explore, you’ll get a sense of my skills, interests, and how I approach visual communication. I hope you enjoy looking through my work as much as I enjoyed creating it!</p>
+<a href="projects.html" class="page2-button">View My Work</a>
+</div>
+
+<div class="section three"></div>
+
+</body>
+</html>
+
